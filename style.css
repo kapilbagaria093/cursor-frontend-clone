@@ -1,6 +1,8 @@
 :root {
     --color-theme-bg: #14120b;
     --color-theme-fg: #edecec;
+    --color-theme-fg-grayed: rgb(153, 152, 149);
+    --color-theme-accent: #f54e00;
     --color-theme-fg-02: #d7d6d5;
     --color-theme-card-hex: #1b1913;
     --color-theme-card-rgb: 27 29 39;
@@ -72,7 +74,7 @@ body {
     padding: 5px 10px;
     cursor: pointer;
     text-decoration: none;
-    border: 0.5px solid var(--color-theme-fg-02);
+    border: 0.5px solid var(--color-theme-fg-grayed);
     padding: 5px 15px;
 }
 
@@ -155,4 +157,62 @@ body {
 
 .logo-card img {
     height: 2.5rem;
+}
+
+.section-card{
+    display: flex;
+    /* flex-direction: row; */
+    background-color: var(--color-theme-card-hex);
+    height: 46vw;
+    width: 90vw;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    padding: 14px;
+    margin: 5vh;
+    border-radius: 4px;
+}
+
+.section-bg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46vw;
+    /* border: 2px solid yellow; */
+}
+
+.section-bg img {
+    width: 840px;
+    /* border: 2px solid red; */
+    height: calc(46vw - 12px);
+    border-radius: 4px;
+    height: 618px;
+    /* border: 2px solid red; */
+}
+
+.section-text {
+    font-size: 1.375rem;
+    line-height: 1.3;
+    font-weight: 400;
+}
+
+.section-text .section-header {
+    color: var(--color-theme-fg)
+}
+
+.section-text p {
+    color: var(--color-theme-fg-grayed)
+}
+
+.section-card .section-link {
+    color: var(--color-theme-accent);
+    font-size: 0.9375rem;
+    /* border: 2px solig red; */
+    margin-top: 18px;
+}
+
+.section-title {
+    font-size: 2.15rem;
+    margin-top: 72px;
+    letter-spacing: 1.2;
 }
